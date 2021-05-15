@@ -9,7 +9,7 @@ This branch consists the code for detecting lane lines using monocular camera an
 - ROS Kinetic
 
 ## Installation
-Installationa and run requirements from https://github.com/f1tenth/f1tenth_system
+Installation and run requirements from https://github.com/f1tenth/f1tenth_system
 
 
 

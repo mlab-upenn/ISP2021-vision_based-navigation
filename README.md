@@ -16,8 +16,8 @@ In order to build this repo, pull this ORB_SLAM2 repo and build following the in
 
 To run the ORB-SLAM2 with Realsense D435i camera:
 
-```roslaunch realsense2_camera rs_rgbd.launch
-   rosrun ORB_SLAM2 RGBD ./Vocabulary/ORBvoc.txt ./Examples/RGB-D/435i_ros.yaml /camera/depth_registered/image_raw:=/camera/depth/image_rect_raw /camera/rgb/image_raw:=/camera/color/image_raw
-```
+```roslaunch realsense2_camera rs_rgbd.launch```
+```rosrun ORB_SLAM2 RGBD ./Vocabulary/ORBvoc.txt ./Examples/RGB-D/435i_ros.yaml /camera/depth_registered/image_raw:=/camera/depth/image_rect_raw /camera/rgb/image_raw:=/camera/color/image_raw```
+
 
 

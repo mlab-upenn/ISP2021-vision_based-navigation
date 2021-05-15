@@ -1,22 +1,24 @@
 # ISP2021-vision_based-navigation
 This is the github project for the F1Tenth Independent Study Projects 2021. In this project we are focusing on the development of different approaches to achieve a vision-based navigation for the F1TENTH car.
 
+This branch consists the code for detecting lane lines using monocular camera and color based masking, with OpenCV.
+
+
 ## Requirements
-- Linux Ubuntu (tested on versions XX.XX and XX.XX)
-- Python 3.XX.
-- ....
+- Linux Ubuntu (tested on versions 16.04)
+- ROS Kinetic
 
 ## Installation
-Use the provided `requirements.txt` in the root directory of this repo, in order to install all required modules.\
-`pip3 install -r /path/to/requirements.txt`
+Installationa and run requirements from https://github.com/f1tenth/f1tenth_system
 
 
-The code is developed with Python 3.XX.
 
 ## Running the code
-* `Step 1:` In step 1 you need to do this and that...
-* `Step 2:` In step 2 you have to do the following...
-* `Step 3:` ....
+* `Step 1:` Launch 'teleop.launch' file from racecar package using roslaunch.
+* `Step 2:` Start monocular camera using cv_camera ROS node.
+rosparam set cv_camera/device_id 0 (check device id for connected usb camera)
+rosrun cv_camera cv_camera_node
+* `Step 3:` Run node 'im_process.py' to detect lane line markings and give steering output using rosrun.
 
 
 
@@ -24,12 +26,5 @@ The code is developed with Python 3.XX.
 
 All main scripts depend on the following subfolders:
 
-1. Folder 1 contains the files for xxx...
-2. Folder 2 contains the files for...
-
-
-## Files
-| File | Description |
-|----|----|
-main.py   | Is used to start the algorithm
-test.py | Is used to create the results
+1. To find 'teleop.launch' file:  ISP2021-vision_based-navigation/src/f110_system/racecar/racecar/launch/teleop.launch 
+2. To find 'im_process.py' file: ISP2021-vision_based-navigation/src/f110_system/racecar/racecar/scripts/im_process.py
